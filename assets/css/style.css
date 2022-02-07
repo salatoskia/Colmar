@@ -3,6 +3,17 @@ html    {
     font-family: 'Roboto', sans-serif;
 }
 
+h2  {
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: grey;
+}
+
+h3  {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
 strong  {
     font-weight: bolder;
     color: grey;
@@ -12,6 +23,34 @@ a   {
     text-decoration: none;
     color: inherit;
 }
+
+.media-container    {
+    overflow: hidden;
+}
+
+.media-container img,
+  .media-container video {
+    display: block;
+    width: 100%;
+  }
+
+.flex-content   {
+    display: flex;
+    padding: 0 1.5rem
+}
+
+.flex-content  .main-content    {
+    width: 60%;
+    padding: 2rem 1.5rem 2rem 0rem;
+}
+
+.flex-content   .supporting-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 0;
+}
+/* Header */
 
 header  {
     padding: 1rem 1.5rem;
@@ -43,7 +82,7 @@ header  .mobile  {
     display: none;
 }
 
-@media only screen and (max-width: 580px)   {
+@media only screen and (max-width: 770px)   {
     header  .desktop    {
         display: none;
     }
@@ -56,5 +95,49 @@ header  .mobile  {
         display: flex;
         justify-content: space-around;
         align-content: center;
+    }
+}
+
+/* Banner */
+
+#banner {
+    background-color: rgb(221, 221, 221);
+}
+
+#banner .supporting-content {
+    justify-content: center;
+}
+
+#banner h2  {
+    padding-bottom: 2rem;
+}
+
+#banner h3  {
+    padding-bottom: 2rem;
+}
+
+#banner a {
+    width: 50%;
+    padding: .5rem 0;
+    background-color: rgb(155, 155, 155);
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width:850px)    {
+    
+    #banner {
+    flex-direction: column;
+    padding: 0;
+    }
+
+    #banner .main-content   {
+        width: auto;
+        padding: 0;
+    }
+
+    #banner .supporting-content {
+        width: auto;
+        padding: 2rem 1rem;
     }
 }
