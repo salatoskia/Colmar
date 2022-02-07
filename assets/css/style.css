@@ -1,0 +1,60 @@
+html    {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+strong  {
+    font-weight: bolder;
+    color: grey;
+}
+
+a   {
+    text-decoration: none;
+    color: inherit;
+}
+
+header  {
+    padding: 1rem 1.5rem;
+}
+
+header  .desktop    {
+    display: flex;
+    align-items: center;
+}
+
+header  .logo   {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+header  .logo img   {
+    margin-right: 0.6rem;
+}
+
+header  li  {
+    display: inline;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
+
+header  .mobile  {
+    display: none;
+}
+
+@media only screen and (max-width: 580px)   {
+    header  .desktop    {
+        display: none;
+    }
+
+    header  .mobile {
+        display: block;
+    }
+
+    header  .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+}
